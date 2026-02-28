@@ -171,6 +171,9 @@
     background-color: rgba(253, 253, 253, 1);
     background-image: linear-gradient(90deg, rgba(253, 253, 253, 1) 0%, rgba(41, 53, 86, 1) 100%);
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     top: 0;
     bottom: 0;
     text-align: center;
@@ -179,7 +182,6 @@
 .header{
     height: 100px;
     width: 90%;
-    margin-left: 5%;
     float: left;
     margin-top: 10px;
     border-radius: 20px;
@@ -193,11 +195,12 @@
     box-shadow: 1px;
 }
 
+
 .logo{
     height: 90%;
-    width: 5%;
+    width: 6%;
     float: left;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-top: 3px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.12);
@@ -222,6 +225,7 @@
 	 justify-content: flex-start;
 	 align-items: center;
     float: left;
+    transition: all 0.3s ease-out;
     margin-top: 3px;
     margin-left: 200px;
     border-radius: 20px;
@@ -235,28 +239,154 @@
     box-shadow: 1px;
 }
 
-.search:focus-within {
-    width: 95%;
-    height: 95%;
-    position: absolute;
-    transition: width 0.4s ease-out;
-    font-family: montserrat;
-    border-radius: 100px;
-    border: 1.5px solid #fff;
-    margin: 45vh 50vw;
-    padding: 10px 20px;
-    background-color: var(--background);
-    color: white;
-    width: 48px;
-    transform: scale(2);
+.search:hover {
+    transform: scale(1.06);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+  }
+
+  .search-input {
+    height: 50%;
+    width: 5%;
+    flex: 1;
+    margin: 10px;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  
+  .cart{
+    height: 70%;
+    width: 5%;
+    float: left;
+    margin-left: 90px;
+    margin-top: 12px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
+  }
+
+  .cart:hover{
+    transform: scale(1.06);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+  }
+
+  .cart button{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url("https://i.pinimg.com/474x/e5/d1/4c/e5d14c6294b3b33b99df5287ea5b5b05.jpg?nii=t");
+    background-size: cover;
+    background-position: 0;
+  }
+
+  .signin{
+    height: 80%;
+    width: 5%;
+    float: left;
+    margin-left: 150px;
+    margin-top: 8px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
 }
 
-.search:search-input {
-    border: none;
-    outline: none;
-    padding: 5px;
-    flex-grow: 1;
+.signin:hover{
+  transform: scale(1.06);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.548);
+  -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+  box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px;
 }
+  .signin button{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url("https://cdn-icons-png.freepik.com/512/5469/5469840.png?ga=GA1.1.1282852663.1764852516");
+    background-size: cover;
+    background-position: 0;
+  }
+
+
+.tovar{
+    width: 85%;
+    height: 85%;
+    margin-top: 50px;
+}
+
+.filters{
+    width: 25%;
+    height: 85%;
+    float: left;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
+}
+
+.main_tovar{
+    width: 68%;
+    height: 85%;
+    float: left;
+    margin-left: 100px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
+}
+
+
+  
 
 
 
