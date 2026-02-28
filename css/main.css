@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bayon');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
 @import url('https://fonts.googleapis.com/css?family=Forum');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
 .main{
     width: 100%;
@@ -165,8 +166,98 @@
 
 
 .main_page {
-    height: 1000px;
-    width: 2000px;
+    height: 1200px;
+    width: 1897px;
     background-color: rgba(253, 253, 253, 1);
     background-image: linear-gradient(90deg, rgba(253, 253, 253, 1) 0%, rgba(41, 53, 86, 1) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    text-align: center;
 }
+
+.header{
+    height: 100px;
+    width: 90%;
+    margin-left: 5%;
+    float: left;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+}
+
+.logo{
+    height: 90%;
+    width: 5%;
+    float: left;
+    margin-left: 40px;
+    margin-top: 3px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.search{
+    height: 90%;
+    width: 50%;
+    display: flex;
+	 justify-content: flex-start;
+	 align-items: center;
+    float: left;
+    margin-top: 3px;
+    margin-left: 200px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+}
+
+.search:focus-within {
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    transition: width 0.4s ease-out;
+    font-family: montserrat;
+    border-radius: 100px;
+    border: 1.5px solid #fff;
+    margin: 45vh 50vw;
+    padding: 10px 20px;
+    background-color: var(--background);
+    color: white;
+    width: 48px;
+    transform: scale(2);
+}
+
+.search:search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex-grow: 1;
+}
+
+
+
+
