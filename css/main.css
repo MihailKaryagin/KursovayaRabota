@@ -155,3 +155,18 @@
   .button:active {
     transform: scale(0.96);
   }
+
+
+
+  /* MAIN_SHOP */
+
+
+
+
+
+.main_page {
+    height: 1000px;
+    width: 2000px;
+    background-color: rgba(253, 253, 253, 1);
+    background-image: linear-gradient(90deg, rgba(253, 253, 253, 1) 0%, rgba(41, 53, 86, 1) 100%);
+}
