@@ -169,8 +169,9 @@
     height: 1200px;
     width: 1897px;
     background-color: rgba(253, 253, 253, 1);
-    background-image: linear-gradient(90deg, rgba(253, 253, 253, 1) 0%, rgba(41, 53, 86, 1) 100%);
     position: absolute;
+    background-image: url('https://i.pinimg.com/originals/1f/a8/5e/1fa85e15d783da455ba35665454041fc.gif?nii=t');
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -507,6 +508,7 @@
 .primenit button{
     width: auto;
     height: 48px;
+    margin-left: 35%;
     background: #ffffff;
     color: #1a1a2e;
     opacity: 0.78;
@@ -538,6 +540,134 @@
     color: #ffffff;
 }
 
+.productsblocks{
+    width: 85%;
+    height: 15%;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.89);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
+}
+
+.productsblocks:hover{
+    transform: translateY(-3px);
+    background: #ffffff;
+}
+
+.graphicscardimg{
+    display: block;
+    height: 90%;
+    margin-left: 10px;
+    width: 25%;
+    margin-top: 3px;
+    text-align: center;
+    float: left;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
+}
+
+.graphicscardimg img{
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+}
+
+.graphicscardtext{
+    width: 50%;
+    height: 10%;
+    margin-top: 6px;
+    float: left;
+    
+}
+
+.graphicscardtext h1{
+    font-family: "Bungee Hairline", cursive;
+    text-align: center;
+    margin-top: 5px;
+    margin: 0 auto;
+    font-size: 15px;    
+    word-spacing: 2px;
+    color: rgb(3, 0, 0);
+    text-shadow: rgb(0, 0, 0) -4px 4px 6px;
+}
+
+.graphicscardprice{
+    width: 20%;
+    height: 20%;
+    float: left;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+.graphicscardprice h2{
+     font-family: "Bungee Hairline", cursive;
+    text-align: center;
+   
+    margin: 0 auto;
+    font-size: 15px;    
+    word-spacing: 2px;
+    color: rgb(3, 0, 0);
+    text-shadow: rgb(0, 0, 0) -4px 4px 6px;
+}
+
+.buybutton{
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.buybutton button{
+    background: #ffffff;
+    color: #1a1a2e;
+    opacity: 0.78;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-radius: 14px;
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+    padding: 14px 30px;
+    box-shadow: 0px 8px 32px 0px rgba(136,136,136,0.15);
+    backdrop-filter: blur(10px);
+    transition: all 0.25s ease;
+    cursor: pointer;
+    display: inline-flex;
+    user-select: auto;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.buybutton button:hover{
+    transform: translateY(-3px);
+    background: #e0eeff;
+    color: #ffffff;
+}
 
 
   
