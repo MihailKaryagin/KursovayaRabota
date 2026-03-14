@@ -386,6 +386,75 @@
     transition: all 0.3s ease-out;
 }
 
+.sortbytype{
+    height: 15%;
+    width: 70%;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 55px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
+}
+
+.sortbytype h1{
+    font-family: "Bungee Hairline", cursive;
+    text-align: center;
+    margin-top: 5px;
+    margin: 0 auto;
+    font-size: 50px;    
+    word-spacing: 7px;
+    color: rgb(3, 0, 0);
+    text-shadow: rgb(0, 0, 0) -4px 4px 6px;
+}
+
+.custom-select {
+    position: relative;
+  }
+  
+  .custom-select select {
+    appearance: none;
+    margin: 5px, 5px, 5px,5px;
+    -webkit-appearance: none;
+    width: 90%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #C4D1EB;
+    border-radius: 5px;
+    color: #000000 !important;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -4px 4px 6px 0px #E2E2E2;
+  }
+  
+  .custom-select select:focus {
+    background: #F2F2F2;
+    border: 1px solid #5A7EC7;
+    border-radius: 5px;
+  }
+  
+  .custom-select::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #000000;
+    clip-path: polygon(8% 17%, 0% 25%, 50% 84%, 100% 25%, 92% 17%, 50% 65%);
+  }
+
 .sortbyprice{
     height: 15%;
     width: 70%;
@@ -668,6 +737,38 @@
     background: #e0eeff;
     color: #ffffff;
 }
+
+
+/* registration */
+
+.main_page_reg{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.container{
+    padding: 20px;
+    width:500px;
+    position: absolute;
+    text-align: center;
+    border:1px solid #ccc;
+    border-radius:10px;
+    background:white;
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+}
+
+.ask{
+    text-align: center;
+
+}
+
+
+
+
+
 
 
   
