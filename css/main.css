@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Forum');
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
+
+
 .main{
     width: 100%;
     height: 100%;
@@ -14,6 +16,37 @@
     height: 99vh;
     margin: -3px auto;
 }
+
+*::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #B6AEBD;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #686868;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #5E5E5E;
+  }
 
 .second_main{
     height: 70%;
@@ -373,6 +406,8 @@
     width: 68%;
     height: 85%;
     float: left;
+    overflow: auto;
+    scrollbar-width: 5px;
     margin-left: 100px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.12);
@@ -569,7 +604,7 @@
 .primenit{
     height: 6%;
     width: 70%;
-    padding-top: 400px;
+    padding-top: 300px;
     position: fixed;
     margin: 0 auto;
 }
@@ -611,7 +646,7 @@
 
 .productsblocks{
     width: 85%;
-    height: 15%;
+    height: 20%;
     margin: 0 auto;
     margin-top: 25px;
     border-radius: 20px;
@@ -650,6 +685,36 @@
     box-shadow: 1px;
     transition: all 0.3s ease-out;
 }
+
+.motherboardscardimg{
+    display: block;
+    height: 165px;
+    margin-left: 10px;
+    width: 165px;
+    margin-top: 3px;
+    text-align: center;
+    float: left;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
+}
+
+.motherboardscardimg img{
+    max-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+}
+
 
 .graphicscardimg img{
     max-height: 100%;
@@ -747,23 +812,75 @@
     background-color: white;
 }
 
-.container{
+.reg_page{
     padding: 20px;
-    width:500px;
-    position: absolute;
+    width:40%;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
     text-align: center;
     border:1px solid #ccc;
     border-radius:10px;
     background:white;
-  -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
-  -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
-  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+    -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+    box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
 }
 
 .ask{
-    text-align: center;
-
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
+
+.ask h1{
+    margin-bottom: 35px;
+}
+
+.ask input{
+    width: 100%;
+  padding: 12px;
+  margin: 5px;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+.ask button{
+    background-color: #0eb7f4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size:16px;
+    font-family:'Courier New', Courier, monospace;
+    border-radius:10px;
+    border-color: #000000;
+  }
+  
+  .ask button:hover{
+    opacity:1;
+  }
+
+  .ask p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    margin: 0 auto;
+    font-size: 20px;    
+    word-spacing: 7px;
+    color: rgb(3, 0, 0);
+    text-shadow: rgb(0, 0, 0) -1px 1px 50px;
+  }
+
+
 
 
 

@@ -9,12 +9,40 @@
 </head>
 <body>
     <div class="main_page_reg">
-        <div class="container">
+        <div class="reg_page">
             <div class="ask">
-                <h1>Do you want to register?</h1>
-                <h1>Yes</h1>
-            </div>
+                <h1>Registration</h1>
+            
+                <label for="email"><p>Username</p></label>
+            <input type="text" name="username" placeholder="Enter Username" required>
+          <label for="email"><p>Email</p></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+          
+          <label for="psw"><p>Password</p></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+                  <label for="email"><p>Phone Number</p></label>
+            <br>
+           <select name="phoneCode" required>
+            <option selected hidden value="">Code</option>
+            <option value="66">+7</option>
+            <option value="66">+98</option>
+            <option value="66">+66</option>
+            <option value="66">+74</option>
+           </select>
+           <input type="phone" name="phone" placeholder="812345678" required>
+      
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+          <div class="clearfix">
+      
+            <button type="submit" class="btn" onclick="location.href='main_shop.html'">Finish</button>
         </div>
+          </div>
+        </div>
+      </form>
+            
+            </div>
         
 
 
