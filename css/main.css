@@ -406,7 +406,7 @@
     width: 68%;
     height: 85%;
     float: left;
-    overflow: auto;
+    overflow: scroll;
     scrollbar-width: 5px;
     margin-left: 100px;
     border-radius: 20px;
