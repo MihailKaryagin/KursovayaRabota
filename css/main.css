@@ -17,6 +17,8 @@
     margin: -3px auto;
 }
 
+
+
 *::-webkit-scrollbar {
     height: 8px;
     width: 8px;
@@ -99,9 +101,8 @@
 
 .text p{
     font-family: "Bungee Hairline", cursive;
-    text-align: center;
-    margin-top: 5px;
-    margin: 0 auto;
+    text-align:center;
+    padding-bottom: 55px;
     font-size: 50px;    
     word-spacing: 7px;
     color: rgb(3, 0, 0);
@@ -137,7 +138,7 @@
     text-align: center;
     font-size: 50px;
     word-spacing: 7px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: rgb(0, 0, 0);
     opacity: 0.7;
     text-shadow: rgb(0, 0, 0) -4px 4px 15px;
@@ -148,7 +149,7 @@
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 31px;
+    font-size: 27px;
     word-spacing: 7px;
     color: rgb(0, 0, 0);
     opacity: 0.7;
@@ -189,7 +190,6 @@
   .button:active {
     transform: scale(0.96);
   }
-
 
 
   /* MAIN_SHOP */
@@ -383,7 +383,7 @@
 .tovar{
     width: 85%;
     height: 85%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .filters{
@@ -406,13 +406,15 @@
     width: 68%;
     height: 85%;
     float: left;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: 6px;
+    scrollbar-color: #64748b #f1f5f9;
     scrollbar-width: 5px;
     margin-left: 100px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8px);
-    overflow: hidden;
     border: 2px solid rgba(255, 255, 255, 0.548);
     -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
@@ -440,6 +442,35 @@
 }
 
 .sortbytype h1{
+    font-family: "Bungee Hairline", cursive;
+    text-align: center;
+    margin-top: 5px;
+    margin: 0 auto;
+    font-size: 50px;    
+    word-spacing: 7px;
+    color: rgb(3, 0, 0);
+    text-shadow: rgb(0, 0, 0) -4px 4px 6px;
+}
+
+.sortbybrand{
+    height: 15%;
+    width: 70%;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 55px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
+}
+
+.sortbybrand h1{
     font-family: "Bungee Hairline", cursive;
     text-align: center;
     margin-top: 5px;
@@ -548,7 +579,7 @@
 .sortbyrate{
     height: 15%;
     width: 70%;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 55px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.12);
@@ -604,7 +635,7 @@
 .primenit{
     height: 6%;
     width: 70%;
-    padding-top: 300px;
+    padding-top: 200px;
     position: fixed;
     margin: 0 auto;
 }
@@ -727,6 +758,7 @@
 .graphicscardtext{
     width: 50%;
     height: 10%;
+    margin-left: 50px;
     margin-top: 6px;
     float: left;
     
@@ -743,18 +775,39 @@
     text-shadow: rgb(0, 0, 0) -4px 4px 6px;
 }
 
-.graphicscardprice{
-    width: 20%;
-    height: 20%;
+.motherboardtext {
+    width: 50%;
+    height: 10%;
+    margin-left: 50px;
+    margin-top: 6px;
     float: left;
+}
+
+.motherboardtext h1{
+    font-family: "Bungee Hairline", cursive;
+    margin-top: 5px;
+    margin: 0 auto;
+    font-size: 20px;    
+    word-spacing: 2px;
+    color: rgb(3, 0, 0);
+    text-shadow: rgb(0, 0, 0) -4px 4px 6px;
+}
+
+.graphicscardprice,
+.motherboardprice {
+    width: 10%;
+    height: 20%;
+    float: right;
+    margin-right: 50px;
     margin-top: 30px;
-    text-align: center;
+    text-align: right;
     
 }
 
-.graphicscardprice h2{
+.graphicscardprice h2,
+.motherboardprice h2{
      font-family: "Bungee Hairline", cursive;
-    text-align: center;
+    text-align: right;
    
     margin: 0 auto;
     font-size: 15px;    
@@ -764,10 +817,10 @@
 }
 
 .buybutton{
-    float: left;
+    float: right;
     width: 100px;
     height: 40px;
-    margin-left: 40px;
+    margin-left: 0px;
     margin-top: 10px;
 }
 
