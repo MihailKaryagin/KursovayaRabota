@@ -1,6 +1,6 @@
-async function fetchAndDisplayMotherboards() {
+async function fetchAndDisplayRam() {
     try {
-        const url = 'http://localhost/myserver/index_motherboards.php'; 
+        const url = 'http://localhost/myserver/index_ram.php'; 
         let response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -8,20 +8,20 @@ async function fetchAndDisplayMotherboards() {
             },
         });
   
-        const motherboards = await response.json(); 
-        displaymotherboards(motherboards); 
+        const ram = await response.json(); 
+        displayram(ram); 
   
     } catch (error) {
         document.querySelector('.main_tovar').innerHTML = '<p>Не удалось загрузить товары. Попробуйте позже.</p>';
     }
 }
   
-  function displaymotherboards(cards) {
+  function displayram(cards) {
     const mainTovarDiv = document.querySelector('.main_tovar');
     mainTovarDiv.innerHTML = ''; 
   
     if (cards.length === 0) {
-        mainTovarDiv.innerHTML = '<p>Материнские платы не найдены.</p>';
+        mainTovarDiv.innerHTML = '<p>По вашему запросу ничего не найдено.</p>';
         return;
     }   
   
@@ -36,6 +36,7 @@ async function fetchAndDisplayMotherboards() {
             </div>
             <div class="motherboardtext">
                 <h1>${card.brand}</h1>
+
                 
             </div>
             <div class="motherboardprice">
@@ -55,4 +56,4 @@ async function fetchAndDisplayMotherboards() {
   }
   
   
-  document.addEventListener('DOMContentLoaded', fetchAndDisplayMotherboards);
+  document.addEventListener('DOMContentLoaded', fetchAndDisplayRam);

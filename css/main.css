@@ -815,6 +815,24 @@
     color: rgb(3, 0, 0);
     text-shadow: rgb(0, 0, 0) -4px 4px 6px;
 }
+.motherboardrating,
+.graphicscardrating{
+    width: auto;
+    height: auto;
+    margin-top: 70px;
+    font-size: 10px;
+    font-family: "Bungee Hairline", cursive;
+    text-align: center;
+    word-spacing: 2px;
+    color: rgb(3, 0, 0);
+    text-shadow: rgb(0, 0, 0) -4px 4px 6px;
+}
+
+.motherboardrating img,
+.graphicscardrating img{
+    width: 15px;
+    height: 15px;
+}
 
 .buybutton{
     float: right;

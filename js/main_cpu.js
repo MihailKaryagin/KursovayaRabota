@@ -43,6 +43,9 @@ async function fetchAndDisplayCpu() {
                 <div class="buybutton">
                     <button type="button" class="primenit_btn" id="buy_btn_${card.id}">Buy</button>
                 </div>
+                <div class="motherboardrating">
+                <h1>Reviews:<img src="temp_imgs/image (10).png"> ${card.rating}</h1>
+            </div>
             </div>
         `;
         mainTovarDiv.appendChild(productBlock);
