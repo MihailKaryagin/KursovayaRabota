@@ -68,7 +68,7 @@ JS ///
             mainTovarDiv.appendChild(productBlock);
         });
     }
-});
+    });    
 
 
 
