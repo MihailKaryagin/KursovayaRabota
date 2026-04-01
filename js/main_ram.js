@@ -1,3 +1,46 @@
+document.addEventListener('DOMContentLoaded', () => {
+
+    const modal = document.getElementById('confirmationModal');
+    let closeModalButtons = [];
+
+
+    function showModal() {
+        if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('show');
+        }
+    }
+
+
+    function hideModal() {
+        if (modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('show');
+        }
+    }
+
+    if (modal) {
+        closeModalButtons = modal.querySelectorAll('.cancelBtn');
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', hideModal);
+        });
+
+        // if (modal) {
+        //     closeModalButtons = modal.querySelectorAll('.submitBtn');
+        //     closeModalButtons.forEach(button => {
+        //         button.addEventListener('click', hideModal);
+        //     });
+
+  
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                hideModal();
+            }
+        });
+    } else {
+        console.warn("Modal with ID 'confirmationModal' not found.");
+    }});
+
 async function fetchAndDisplayRam() {
     try {
         const url = 'http://localhost/myserver/index_ram.php'; 

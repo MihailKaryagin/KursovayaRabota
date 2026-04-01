@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn("Modal with ID 'confirmationModal' not found.");
     }
 
+    
+
     fetchAndDisplayGraphicsCards();
 
 
@@ -135,3 +137,6 @@ if (time) {
     }, 1000); 
 
 };
+
+
+

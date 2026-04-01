@@ -216,6 +216,8 @@
 .header{
     height: 100px;
     width: 90%;
+    position: fixed;
+    z-index: 50;
     float: left;
     margin-top: 10px;
     border-radius: 20px;
@@ -228,6 +230,7 @@
     box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
     box-shadow: 1px;
 }
+
 
 
 .logo{
@@ -383,7 +386,7 @@
 .tovar{
     width: 85%;
     height: 85%;
-    margin-top: 20px;
+    margin-top: 150px;
 }
 
 .filters{
@@ -965,12 +968,13 @@
   
   .modal.show {
     background: rgba(0, 0, 0, 0.5);
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
+    z-index: 1900;
     align-items: center;
     justify-content: center;
   }
@@ -978,6 +982,7 @@
   .box {
     background: #353b48;
     padding: 15px;
+    z-index: 2000;
     text-align: center;
     border-radius: 15px;
     width: 330px;
@@ -993,7 +998,7 @@
     transition: all 0.3s ease-out;
   }
   
-  .box .boxTitle {
+  .boxTitle {
     margin-bottom: 25px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 20px;
@@ -1062,6 +1067,8 @@
     display: none;
   }
 
+
+  
 
 
 
