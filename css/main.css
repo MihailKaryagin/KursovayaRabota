@@ -951,6 +951,117 @@
     text-shadow: rgb(0, 0, 0) -1px 1px 50px;
   }
 
+  .task {
+    background: #353b48;
+    color: #f5f6fa;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .title {
+    display: flex;
+  }
+  
+  .modal.show {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box {
+    background: #353b48;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    width: 330px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(25px);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
+  }
+  
+  .box .boxTitle {
+    margin-bottom: 25px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-align: center;
+    
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    -webkit-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 6px 17px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px;
+    transition: all 0.3s ease-out;
+    
+  }
+  
+  .box input {
+    width: 100%;
+    font-size: 17px;
+    padding: 7px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .box .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .box .button {
+    background: #36ec1ac9;
+    color: #1a1a2e;
+    opacity: 0.78;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-radius: 14px;
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+    padding: 14px 30px;
+    box-shadow: 0px 8px 32px 0px rgba(136,136,136,0.15);
+    backdrop-filter: blur(10px);
+    transition: all 0.25s ease;
+    cursor: pointer;
+    display: inline-flex;
+    user-select: auto;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+
+  }
+  
+  .box .cancelBtn {
+    background: #ff0000b4;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
 
 
 
